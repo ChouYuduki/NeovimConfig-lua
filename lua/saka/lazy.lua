@@ -21,7 +21,7 @@ require("lazy").setup({
   { import = "saka.plugins.lsp" },
 
 }, {
-  checker = { enabled = true, },
+  checker = { enabled = true, notify = false, },
   change_detection = { notify = false, },
 })
 
