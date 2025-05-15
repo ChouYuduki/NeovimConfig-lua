@@ -6,10 +6,15 @@ keymap.set('n', 'h', 'i', { noremap = true })
 keymap.set('n', 'H', 'I', { noremap = true })
 
 keymap.set('n', 'i', 'k', { noremap = true })
+keymap.set('v', 'i', 'k', { noremap = true })
 keymap.set('n', 'I', '5k', { noremap = true })
+keymap.set('v', 'I', '5k', { noremap = true })
 keymap.set('n', 'K', '5j', { noremap = true })
+keymap.set('v', 'K', '5j', { noremap = true })
 keymap.set('n', 'k', 'j', { noremap = true })
+keymap.set('v', 'k', 'j', { noremap = true })
 keymap.set('n', 'j', 'h', { noremap = true })
+keymap.set('v', 'j', 'h', { noremap = true })
 
 -- map s <nop>
 keymap.set('n', 's', '<nop>')
