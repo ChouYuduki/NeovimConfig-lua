@@ -16,6 +16,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("saka.plugins")
+require("lazy").setup({
+  { import = "saka.plugins" },
+  { import = "saka.plugins.lsp" },
+
+}, {
+  checker = { enabled = true, },
+  change_detection = { notify = false, },
+})
 
 
