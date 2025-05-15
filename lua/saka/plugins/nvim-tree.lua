@@ -56,8 +56,8 @@ return {
           }
         end
 
-        vim.keymap.set("n", "I", "5k", opts("Move up 5 lines"))
-        vim.keymap.set("n", "K", "5j", opts("Move down 5 lines"))
+        vim.keymap.set("n", "I", "3k", opts("Move up 3 lines"))
+        vim.keymap.set("n", "K", "3j", opts("Move down 3 lines"))
       end,
     })
 
