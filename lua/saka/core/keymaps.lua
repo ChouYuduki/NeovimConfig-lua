@@ -31,7 +31,28 @@ keymap.set('n', 'R', ':source $MYVIMRC<CR>')
 
 --
 -- window management
-keymap.set('n', '<leader>v', '<C-w>v')
-keymap.set('n', '<leader>h', '<C-w>s')
-keymap.set('n', '<leader>e', '<C-w>=')
+
+-- split and move
+keymap.set('n', 'sl', ':set splitright<CR>:vsplit<CR>')
+keymap.set('n', 'sj', ':set nosplitright<CR>:vsplit<CR>')
+keymap.set('n', 'si', ':set nosplitbelow<CR>:split<CR>')
+keymap.set('n', 'sk', ':set splitbelow<CR>:split<CR>')
+
+-- switch window
+keymap.set('n', '<leader>l', '<C-w>l')
+keymap.set('n', '<leader>i', '<C-w>k')
+keymap.set('n', '<leader>j', '<C-w>h')
+keymap.set('n', '<leader>k', '<C-w>j')
+
+-- change window size
+keymap.set('n', '<down>', ':res +5<CR>')
+keymap.set('n', '<up>', ':res -5<CR>')
+keymap.set('n', '<right>', ':vertical resize-5<CR>')
+keymap.set('n', '<left>', ':vertical resize+5<CR>')
+
+
+-- close window
 keymap.set('n', '<leader>x', '<cmd>close<CR>')
+
+
+

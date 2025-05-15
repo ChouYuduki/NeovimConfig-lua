@@ -59,8 +59,8 @@ mapping = {
     end
   end, { "i", "s" }),
 
-  ["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
-  ["<Up>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
+--  ["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+--  ["<Up>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
 
   ["<CR>"] = cmp.mapping(function(fallback)
     if cmp.visible() and cmp.get_selected_entry() then

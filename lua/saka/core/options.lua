@@ -3,6 +3,7 @@ vim.cmd("let g:netrw_liststyle = 3")
 local opt = vim.opt
 
 opt.number = true
+opt.list = true
 
 -- tabs 
 opt.tabstop = 2
@@ -25,8 +26,14 @@ opt.backspace = "indent,eol,start"
 -- allows paste from and into other place freely
 opt.clipboard:append("unnamedplus")
 
--- change default split windows location 
-opt.splitright = true
-opt.splitbelow = true
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = "*",
+  callback = function()
+    local last_pos = vim.fn.line([['"]])
+    if last_pos > 1 and last_pos <= vim.fn.line("$") then
+      vim.cmd('normal! g\'"')
+    end
+  end,
+})
 
 
