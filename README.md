@@ -1,2 +1,2 @@
-## <center>The NeoVim IDE-Config by lua</center>
+## <center>The NeoVim IDE-Config by Lua</center>
 
