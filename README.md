@@ -5,7 +5,7 @@
 ## Usage  
 1. Clone the repository to `~/.config`
      
-2. Change the name of root directory from `NeovimConfig-lua` to `nvim`
+2. Change the name of the cloned repository from `NeovimConfig-lua` to `nvim`
   
 3. Remember to install NodeJs, or it will throw errors:
 
